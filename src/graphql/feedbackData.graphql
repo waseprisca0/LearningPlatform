@@ -1,0 +1,5 @@
+query FeedbackData($UserId: uuid!) {
+  Feedback(where: { UserId: { _eq: $UserId } }) {
+    CourseId
+  }
+}

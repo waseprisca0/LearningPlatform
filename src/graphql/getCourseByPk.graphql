@@ -1,0 +1,8 @@
+query getCourseByPk($Id: Int!) {
+  Course_by_pk(Id: $Id) {
+    Chapters
+    CourseName
+    Description
+    Links
+  }
+}

@@ -1,0 +1,22 @@
+mutation updatingCourse(
+  $Id: Int!
+  $CourseName: String
+  $Links: String
+  $Description: String
+  $Chapters: [json!]
+) {
+  update_Course_by_pk(
+    pk_columns: { Id: $Id }
+    _set: {
+      Chapters: $Chapters
+      CourseName: $CourseName
+      Description: $Description
+      Links: $Links
+    }
+  ) {
+    Chapters
+    CourseName
+    Links
+    Description
+  }
+}

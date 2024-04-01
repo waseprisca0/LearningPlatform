@@ -1,0 +1,14 @@
+query getCourses {
+  Course {
+    Id
+    CourseName
+    Description
+    Chapters
+    Links
+  }
+  Course_aggregate {
+    aggregate {
+      count
+    }
+  }
+}

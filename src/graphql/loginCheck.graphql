@@ -1,0 +1,10 @@
+query loginCheck($Email: String, $Password: String) {
+  User(
+    where: { Email: { _eq: $Email }, _and: { Password: { _eq: $Password } } }
+  ) {
+    Email
+    FirstName
+    Id
+    Role
+  }
+}

@@ -1,0 +1,7 @@
+mutation completeCourse($CourseId: Int!, $UserId: uuid!) {
+  insert_Feedback(
+    objects: { CourseId: $CourseId, IsCompleted: true, UserId: $UserId }
+  ) {
+    affected_rows
+  }
+}

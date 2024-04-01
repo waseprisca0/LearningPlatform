@@ -1,0 +1,22 @@
+mutation InsertNewCourse(
+  $CourseName: String!
+  $Links: String!
+  $Description: String!
+  $Chapters: [json!]
+) {
+  insert_Course(
+    objects: {
+      CourseName: $CourseName
+      Links: $Links
+      Description: $Description
+      Chapters: $Chapters
+    }
+  ) {
+    affected_rows
+    returning {
+      Chapters
+      CourseName
+      Links
+    }
+  }
+}

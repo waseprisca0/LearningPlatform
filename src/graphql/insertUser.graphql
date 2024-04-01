@@ -1,0 +1,23 @@
+mutation insertNewUser(
+  $Email: String
+  $FirstName: String
+  $LastName: String
+  $Password: String
+) {
+  insert_User(
+    objects: {
+      Email: $Email
+      FirstName: $FirstName
+      LastName: $LastName
+      Password: $Password
+      Role: 1
+    }
+  ) {
+    affected_rows
+    returning {
+      Email
+      FirstName
+      LastName
+    }
+  }
+}

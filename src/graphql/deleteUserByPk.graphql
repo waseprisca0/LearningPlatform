@@ -1,0 +1,5 @@
+mutation deleteCourseByPk($Id: Int!) {
+  delete_Course_by_pk(Id: $Id) {
+    CourseName
+  }
+}
