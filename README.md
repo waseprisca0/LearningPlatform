@@ -8,7 +8,7 @@ This is a Next.js project bootstrapped with create-next-app.
 Clone the repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/frankflej/learningplatform.git
+git clone https://github.com/waseprisca0/LearningPlatform.git
 ```
 Install all the required packages by running the following command:
 
